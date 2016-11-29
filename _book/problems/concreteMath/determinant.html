@@ -1,0 +1,353 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>determinant · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../numberTheory/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ConcreteMath
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1" data-path="determinant.html">
+            
+                <a href="determinant.html">
+            
+                    
+                    determinant
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../numberTheory/">
+            
+                <a href="../numberTheory/">
+            
+                    
+                    NumberTheory
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../numberTheory/counter.html">
+            
+                <a href="../numberTheory/counter.html">
+            
+                    
+                    组合计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../numberTheory/mobius.html">
+            
+                <a href="../numberTheory/mobius.html">
+            
+                    
+                    mobius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >determinant</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="determinant">determinant</h1>
+<p>&#x884C;&#x5217;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;, &#x7528;Leibniz formula:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>e</mi><mi>t</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><msub><mo>&#x2211;</mo><mrow><mi>&#x3C3;</mi><mo>&#x2208;</mo><msub><mi>S</mi><mrow><mi>n</mi></mrow></msub></mrow></msub><mi>s</mi><mi>g</mi><mi>n</mi><mo>(</mo><mi>&#x3C3;</mi><mo>)</mo><msubsup><mo>&#x220F;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>a</mi><mrow><mi>i</mi><mo separator="true">,</mo><msub><mi>&#x3C3;</mi><mrow><mi>i</mi></mrow></msub></mrow></msub></mrow><annotation encoding="application/x-tex">
+det(A)=\sum_{\sigma\in S_{n}} sgn(\sigma) \prod_{i=1}^{n} a_{i, \sigma_{i}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:3.050733em;vertical-align:-1.399336em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mclose">)</span><span class="mrel">=</span><span class="mop op-limits"><span class="vlist"><span style="top:1.1943359999999998em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="mrel">&#x2208;</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-scriptstyle scriptscriptstyle cramped"><span class="mord scriptscriptstyle cramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="op-symbol large-op mop">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="mclose">)</span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="op-symbol large-op mop">&#x220F;</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="vlist"><span style="top:0.15em;margin-right:0.07142857142857144em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-scriptstyle scriptscriptstyle cramped"><span class="mord scriptscriptstyle cramped"><span class="mord mathit">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></p>
+<h2 id="determinant-and-permutation">determinant and Permutation</h2>
+<p>easy to know that, &#x5168;&#x4E00;&#x77E9;&#x9635;&#x7684;&#x884C;&#x5217;&#x5F0F;&#x7684;&#x503C;&#x4E3A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mclose">!</span></span></span></span>, &#x540C;&#x65F6;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6392;&#x5217;&#x4E2A;&#x6570;&#x4E5F;&#x662F;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mclose">!</span></span></span></span></p>
+<p>&#x800C;&#x4E14;Leibniz&#x516C;&#x5F0F;&#x4E2D;&#x4E5F;&#x51FA;&#x73B0;&#x4E86;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x6392;&#x5217;&#x6784;&#x6210;&#x7684;&#x96C6;&#x5408;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mrow><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span>, &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x80FD;&#x591F;&#x8003;&#x8651;, &#x7528;&#x884C;&#x5217;&#x5F0F;&#x8FD9;&#x4E00;&#x5DE5;&#x5177;, &#x53BB;&#x62BD;&#x8C61;&#x5316;&#x4E00;&#x4E9B;&#x6392;&#x5217;&#x76F8;&#x5173;&#x7684;&#x9898;&#x76EE;&#x5462;?</p>
+<h3 id="&#x6392;&#x5217;&#x7684;&#x4E2A;&#x6570;">&#x6392;&#x5217;&#x7684;&#x4E2A;&#x6570;</h3>
+<p>&#x628A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5217;, &#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x53EA;&#x5141;&#x8BB8;&#x67D0;&#x4E9B;&#x4F4D;&#x7F6E;&#x653E;&#x67D0;&#x4E9B;&#x5143;&#x7D20;, &#x5B9A;&#x4E49;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>&#x9636;&#x77E9;&#x9635;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span>&#x4E3A;:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>A</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mrow><mn>1</mn><mspace width="1em"></mspace><mtext><mi mathvariant="normal">j</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">c</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">p</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">i</mi></mtext></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mspace width="1em"></mspace><mtext><mi mathvariant="normal">j</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">c</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">&apos;</mi><mi mathvariant="normal">t</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">p</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mtext>&#xA0;</mtext><mi mathvariant="normal">i</mi></mtext></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">
+A_{i, j}=\begin{cases} 1 \quad \text{j can be placed at i} \\ 0 \quad \text{j can&apos;t be placed at i} \end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.75em;"></span><span class="strut bottom" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">A</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">=</span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist"><span style="top:-0.6819999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mspace quad"></span><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">j</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">c</span><span class="mord mathrm">a</span><span class="mord mathrm">n</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">b</span><span class="mord mathrm">e</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">p</span><span class="mord mathrm">l</span><span class="mord mathrm">a</span><span class="mord mathrm">c</span><span class="mord mathrm">e</span><span class="mord mathrm">d</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">a</span><span class="mord mathrm">t</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">i</span></span></span></span><span style="top:0.7579999999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">0</span><span class="mord mspace quad"></span><span class="text mord displaystyle textstyle uncramped"><span class="mord mathrm">j</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">c</span><span class="mord mathrm">a</span><span class="mord mathrm">n</span><span class="mord mathrm">&apos;</span><span class="mord mathrm">t</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">b</span><span class="mord mathrm">e</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">p</span><span class="mord mathrm">l</span><span class="mord mathrm">a</span><span class="mord mathrm">c</span><span class="mord mathrm">e</span><span class="mord mathrm">d</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">a</span><span class="mord mathrm">t</span><span class="mord mspace">&#xA0;</span><span class="mord mathrm">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+<p>&#x901A;&#x8FC7;&#x624B;(wan)&#x7B97;(quan)&#x6570;(bu)&#x636E;(suan), &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>e</mi><mi>t</mi><mo>(</mo><mi>A</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">det(A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mclose">)</span></span></span></span>&#x5C31;&#x662F;&#x5408;&#x6CD5;&#x7684;&#x6392;&#x5217;&#x7684;&#x4E2A;&#x6570;! &#x6211;&#x4EEC;&#x8BB0;&#x4F5C;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">cnt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">c</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span>.</p>
+<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x70B9;&#x5C0F;&#x5C0F;&#x7684;&#x8BC1;&#x660E;:</p>
+<p>&#x9996;&#x5148;&#x5148;&#x8BC1;&#x660E;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>e</mi><mi>t</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>&#x2264;</mo><mi>c</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex"> det(A) \leq cnt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mopen">(</span><span class="mord mathit">A</span><span class="mclose">)</span><span class="mrel">&#x2264;</span><span class="mord mathit">c</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span>.
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo>&#x2211;</mo><mrow><mi>&#x3C3;</mi><mo>&#x2208;</mo><msub><mi>S</mi><mrow><mi>n</mi></mrow></msub></mrow></msub><mi>s</mi><mi>g</mi><mi>n</mi><mo>(</mo><mi>&#x3C3;</mi><mo>)</mo><msubsup><mo>&#x220F;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>a</mi><mrow><mi>i</mi><mo separator="true">,</mo><msub><mi>&#x3C3;</mi><mrow><mi>i</mi></mrow></msub></mrow></msub><mo>=</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+  \sum_{\sigma\in S_{n}} sgn(\sigma) \prod_{i=1}^{n} a_{i, \sigma_{i}} =...
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:3.050733em;vertical-align:-1.399336em;"></span><span class="base displaystyle textstyle uncramped"><span class="mop op-limits"><span class="vlist"><span style="top:1.1943359999999998em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="mrel">&#x2208;</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-scriptstyle scriptscriptstyle cramped"><span class="mord scriptscriptstyle cramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="op-symbol large-op mop">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord mathit">s</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">n</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="mclose">)</span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="op-symbol large-op mop">&#x220F;</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C3;</span><span class="vlist"><span style="top:0.15em;margin-right:0.07142857142857144em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-scriptstyle scriptscriptstyle cramped"><span class="mord scriptscriptstyle cramped"><span class="mord mathit">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">=</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span></span></span></span></span>
+(&#x4F5C;&#x8005;&#x8868;&#x793A;&#x5199;&#x7740;&#x5199;&#x7740;&#x4E0D;&#x60F3;&#x5199;&#x4E86;&#x5C31;&#x5148;&#x653E;&#x7740;&#x5427;.)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: ConcreteMath">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../numberTheory/" class="navigation navigation-next " aria-label="Next page: NumberTheory">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"determinant","level":"1.2.1.1","depth":3,"next":{"title":"NumberTheory","level":"1.2.2","depth":2,"path":"problems/numberTheory/README.md","ref":"problems/numberTheory/README.md","articles":[{"title":"组合计数","level":"1.2.2.1","depth":3,"path":"problems/numberTheory/counter.md","ref":"problems/numberTheory/counter.md","articles":[]},{"title":"mobius","level":"1.2.2.2","depth":3,"path":"problems/numberTheory/mobius.md","ref":"problems/numberTheory/mobius.md","articles":[]}]},"previous":{"title":"ConcreteMath","level":"1.2.1","depth":2,"path":"problems/concreteMath/README.md","ref":"problems/concreteMath/README.md","articles":[{"title":"determinant","level":"1.2.1.1","depth":3,"path":"problems/concreteMath/determinant.md","ref":"problems/concreteMath/determinant.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"problems/concreteMath/determinant.md","mtime":"2016-11-29T01:50:31.479Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-29T01:50:34.058Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
